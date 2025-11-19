@@ -1,0 +1,70 @@
+/* =================================
+   1. Definición de la Fuente
+   =================================
+*/
+/* Para la fuente Lilita One  */
+@font-face {
+    font-family: 'Lilita Header';
+    src: url(../fonts/LilitaOne-Regular.ttf) format(truetype);
+}
+
+header {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    color: #166088;
+    height: 60px;
+
+}
+.destacado {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #166088;
+    margin-top: 0;
+    display: inline-block;
+    position: relative;
+    
+}
+
+.mariposa-en-eslogan {
+    width: 45px; 
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+    
+}
+ 
+.navbar {
+    /* CAMBIO CLAVE: Fondo Azul Claro/Pastel */
+    background-color: #aaa1c8; 
+    /* Opcional: Borde inferior para un toque extra, usando el color del eslogan */
+    border-bottom: 3px solid #4A6FA5; 
+    height: 50px;
+}
+
+.cart-container {
+    /* Fija la posición del carrito al extremo derecho del contenedor-fluid */
+    position: absolute;
+    right: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-carrito {
+    color: #166088;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    background-color: #4A6FA5; 
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-left: -8px; 
+    position: relative;
+    top: -8px;
+}
