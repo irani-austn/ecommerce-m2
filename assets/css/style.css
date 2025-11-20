@@ -32,39 +32,73 @@ header {
     margin-left: 5px;
     
 }
- 
+/* NAVBAR */
 .navbar {
-    /* CAMBIO CLAVE: Fondo Azul Claro/Pastel */
-    background-color: #aaa1c8; 
-    /* Opcional: Borde inferior para un toque extra, usando el color del eslogan */
-    border-bottom: 3px solid #4A6FA5; 
-    height: 50px;
+    background:#aaa1c8;
+    border-bottom:3px solid #4A6FA5;
+    padding:10px 20px;
+    position:relative;
 }
-
 .cart-container {
-    /* Fija la posición del carrito al extremo derecho del contenedor-fluid */
-    position: absolute;
-    right: 15px; 
-    top: 50%;
-    transform: translateY(-50%);
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
 }
-
 .btn-carrito {
-    color: #166088;
-    font-size: 1.5rem;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    color:#166088;
+    font-size:1.6rem;
+    display:flex;
+    align-items:center;
+}
+.cart-count {
+    background:#4A6FA5;
+    color:#fff;
+    font-size:.7rem;
+    font-weight:bold;
+    border-radius:50%;
+    padding:2px 6px;
+    margin-left:-8px;
+    position:relative;
+    top:-8px;
 }
 
-.cart-count {
-    background-color: #4A6FA5; 
-    color: white;
-    font-size: 0.7rem;
-    font-weight: bold;
-    border-radius: 50%;
-    padding: 2px 6px;
-    margin-left: -8px; 
-    position: relative;
-    top: -8px;
+/* NAVBAR MOBILE */
+@media(max-width:768px){
+    .navbar{padding:5px 15px;}
+    .cart-container{right:60px;}
 }
+
+/* HERO */
+.hero-section {
+    min-height:60vh;
+    width:100%;
+    background:url('../img/Gemini_Generated_Image_qonrzeqonrzeqonr.png') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+.hero-overlay {
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.4);
+}
+.hero-content {
+    color:#fff;
+    z-index:10;
+    text-align:center
+}
+
+.card-img-top {
+    height: 180px;       /* ajusta el alto */
+    object-fit: cover;   /* mantiene proporción */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 260px;       /* ajusta este número si quieres más alto o más bajo */
+    object-fit: cover;   /* recorta sin deformar */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+ }

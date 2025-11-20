@@ -1,76 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Art desk</title>
+    <title>My Home</title>
 
     <!-- BOOTSTRAP CSS - ESTILOS DE ELEMENTOS  -->
 
-    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link defer rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link
-      defer
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
     <!-- BOOTSTRAP JS - LÓGICA DE ELEMENTOS   -->
-    <script
-      defersrc="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
     <!-- HOJA DE ESTILOS PROPIA -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <script defer src="./assets/js/script.js"></script>
+</head>
 
+<body>
+    <!-- INICIO SECCION HEADER -->
     <header class="text-center mt-1 py-0">
-      <p class="mb-0 lh-1 fs-5">My Home <img src="./assets/img/mariposa.png.png" alt="Mariposa colorida"class="mariposa-en-eslogan"/></p>
-      <h6 class="destacado mb-2 py-0 lh-0">Diseña con estilo, crea tu espacio
-      </h6>
+        <p class="mb-0 lh-1 fs-5">My Home <img src="./assets/img/mariposa.png.png" alt="Mariposa colorida"
+                class="mariposa-en-eslogan" /></p>
+        <h6 class="destacado mb-2 py-0 lh-0">Diseña con estilo, crea tu espacio</h6>
     </header>
+    <!-- TERMINO SECCION HEADER -->
 
-    <main>
-      <nav class="navbar navbar-expand-lg navbar-custom mt-3">
-        <div class="container-fluid">
-          <a class="navbar-brand ms-auto" href="#">My Home</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row w-100 text-center">
-              <li class="nav-item flex-fill">
-                <a class="nav-link active" aria-current="page" href="#">Decoracion</a>
-              </li>
-              <li class="nav-item flex-fill">
-                <a class="nav-link" href="#">Productos</a>
-              </li>
-              <li class="nav-item flex-fill">
-                <a class="nav-link" href="#">Regalos</a>
-              </li>
-            </ul>
-          </div>
+    <!-- INICIO SECCION NAVBAR  -->
+    <nav class="navbar navbar-expand-lg navbar-custom mt-3">
+        <div class="container-fluid"><a class="navbar-brand ms-auto" href="#">My Home</a><button class="navbar-toggler"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row w-100 text-center">
+                    <li class="nav-item flex-fill"><a class="nav-link active" aria-current="page"
+                            href="#">Decoracion</a></li>
+                    <li class="nav-item flex-fill"><a class="nav-link" href="seccion-productos">Productos</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" href="#">Regalos</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+
         <div class="cart-container">
             <a href="#" class="btn-carrito">
-                <i class="bi bi-cart3"></i> 
-                <span class="cart-count">3</span> 
-            </a>
-      </nav>
+                <i class="bi bi-cart3"></i>
+                <span class="cart-count">3</span> </a>
+    </nav>
+    <!-- TERMINO SECCION NAVBAR -->
+
+    <!-- INICIO SECCION HERO SECTION  -->
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center">
+            <h1>De la inspiración al diseño perfecto</h1>
+
+            <p>Transforma tu espacio con nuestra visión y calidad única.</p>
+            <a href="#" class="btn btn-cta">Empieza tu Transformación</a>
+        </div>
+    </section>
+    <!-- TERMINO SECCION HERO SECTION -->
+
+
+
+    <main class="container mt-5">
+        <h4 class="text-center py-4">Especiales de temporada</h4>
+
+        <section id="seccion-productos" class="p">
+        <div class="row pb-5 row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+        <!-- INICIO TARJETA 1 -->
+        <div class="col">
+            <div class="card w-100">
+                <img src="./assets/img/Silla.webp" class="card-img-top" alt="Silla escritorio">
+                <div class="card-body">
+                    <h5 class="card-title">Silla Escritorio Textil Negro</h5>
+                    <p class="card-text">$49.000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carro</a>
+                </div>
+            </div>
+        </div>
+         <!-- TERMINO TARJETA 1 -->
+
+        <!-- TERMINO TARJETA 2 -->
+        <div class="col">
+            <div class="card w-100">
+                <img src="./assets/img/Puff.jpg" class="card-img-top" alt="Puff redondo">
+                <div class="card-body">
+                    <h5 class="card-title">Puff Redondo y Peludo</h5>
+                    <p class="card-text">$39.000</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carro</a>
+                </div>
+            </div>
+        </div>
+        <!-- TERMINO TARJETA 2 -->
+
+        <!-- INICIO TARJETA 3 -->
+        <div class="col">
+            <div class="card w-100">
+                <img src="./assets/img/Escritorio.webp" class="card-img-top" alt="Escritorio">
+                <div class="card-body">
+                    <h5 class="card-title">Escritorio 2 Repisas Blanco</h5>
+                    <p class="card-text">$74.990</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carro</a>
+                </div>
+            </div>
+        </div>
+        <!-- TERMINO TARJETA 3 -->
+
+        <!-- INICIO TARJETA 4 -->
+        <div class="col">
+            <div class="card w-100">
+                <img src="./assets/img/Repisa.webp" class="card-img-top" alt="Repisa">
+                <div class="card-body">
+                    <h5 class="card-title">Set 3 Repisas Melamina</h5>
+                    <p class="card-text">$14.990</p>
+                    <a href="#" class="btn btn-primary">Agregar al Carro</a>
+                </div>
+            </div>
+        </div>
+        <!-- TERMINO TARJETA 4 -->
+
+    </div>
+</section>
+
+
+
+
     </main>
-  </head>
-  <body></body>
+
+</body>
+
 </html>
