@@ -2,70 +2,135 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carrito</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito</title>
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <!-- Bootstrap CSS -->
-  <link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-  <!-- CSS propio -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Bootstrap JS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <script src="./assets/js/logica_carrito"></script>
+
+    <!-- Bootstrap JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-custom mt-0">
-    <div class="container-fluid">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom mt-0">
+        <div class="container-fluid">
 
-      <a class="navbar-brand" href="index.html">My Home</a>
+            <a class="navbar-brand" href="index.html">My Home</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row w-100 text-center">
-          <li class="nav-item flex-fill">
-            <a class="nav-link" href="index.html">Decoración</a>
-          </li>
-          <li class="nav-item flex-fill">
-            <a class="nav-link" href="detalle-producto.html">Productos</a>
-          </li>
-          <li class="nav-item flex-fill">
-            <a class="nav-link" href="index.html">Regalos</a>
-          </li>
-        </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row w-100 text-center">
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" href="index.html">Decoración</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" href="detalle-producto.html">Productos</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" href="index.html">Regalos</a>
+                    </li>
+                </ul>
 
-        <!-- Carrito -->
-        <div class="d-flex align-items-center ms-auto">
-          <a class="nav-link active me-2" aria-current="page" href="carrito.html">Carrito</a>
-          <a href="#" class="btn-carrito d-flex align-items-center">
-            <i class="bi bi-cart3"></i>
-            <span class="cart-count ms-1">3</span>
-          </a>
+                <!-- Carrito -->
+                <div class="d-flex align-items-center ms-auto">
+                    <a class="nav-link active me-2" aria-current="page" href="carrito.html">Carrito</a>
+                    <a href="#" class="btn-carrito d-flex align-items-center">
+                        <i class="bi bi-cart3"></i>
+                        <span class="cart-count ms-1">3</span>
+                    </a>
+                </div>
+            </div>
+
         </div>
-      </div>
+    </nav>
+    <!-- TERMINO NAVBAR -->
 
+    <header class="py-3">
+        <h1 class="text-center">Carrito</h1>
+    </header>
+
+    <main class="container">
+        <h6>Vendido por My Home</h6>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+                <img src="./assets/img/Silla.webp" class="img-fluid w-50" alt="Silla escritorio">
+            </div>
+
+            <div class="col-3 d-flex align-items-start mt-5">
+                <p>Silla Escritorio Textil Negro</p>
+            </div>
+
+            <div class="col-3 mt-5">
+                <p><strong>$49.990</strong></p>
+            </div>
+
+            <div class="col-3 mt-5">
+                <div class="col-auto">
+                    <div class="quantity-widget">
+                        <button class="qty-btn minus-btn" type="button">−</button>
+                        <span class="qty-value">1</span>
+                        <button class="qty-btn plus-btn" type="button">+</button>
+                        <p class="qty-limit">Máx 125 unidades</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="mt-5">
+    <div class="footer-top-bar py-3" style="background-color: #A393C7; color: white;">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-md-8 text-center text-md-start mb-2 mb-md-0">
+                    <a href="#" class="footer-link mx-3 text-white text-decoration-none">Preguntas Frecuentes</a>
+                    <a href="#" class="footer-link mx-3 text-white text-decoration-none">Política de Devolución</a>
+                    <a href="#" class="footer-link mx-3 text-white text-decoration-none">Contáctanos</a>
+                </div>
+
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="#" class="text-white mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white mx-2 fs-5"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
-  <!-- TERMINO NAVBAR -->
 
-  <header class="py-3">
-    <h1 class="text-center">Carrito</h1>
-  </header>
+    <div class="footer-bottom-bar py-3 bg-light border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-secondary">&copy; 2025 My Home. Diseña con estilo, crea tu espacio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
+
 
 </html>

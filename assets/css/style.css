@@ -102,3 +102,91 @@ header {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
  }
+
+       /* CSS Compacto */
+.quantity-widget {
+            display: flex;
+            align-items: center; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 8px; 
+            font-family: sans-serif; 
+        }
+
+        .qty-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: none;
+            background-color: #364048; 
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            transition: opacity 0.2s; /* Pequeña transición para el estado deshabilitado */
+        }
+        
+        /* Estilo para los botones deshabilitados */
+        .qty-btn:disabled {
+            opacity: 0.5; /* Se ven transparentes cuando están deshabilitados */
+            cursor: not-allowed;
+        }
+
+        .qty-value {
+            font-size: 16px;
+            color: #364048;
+            font-weight: bold; 
+        }
+
+.qty-limit {
+            width: 100%; 
+            text-align: center;
+            font-size: 14px;
+            color: #555; 
+            margin-top: -5px; 
+            margin-bottom: 0;
+ }
+
+        /* ESTILO PARA EL FOOTER TEMÁTICO */
+
+/* Enlace temático: usa el azul de los botones al pasar el ratón */
+.footer-link:hover,
+.footer-top-bar a:hover {
+    color: #0d6efd !important; /* El color azul de los botones "Agregar al carro" */
+}
+
+/* Color de fondo lila/lavanda exacto para la navbar/footer (si no lo tienes definido) */
+.navbar-custom {
+    background-color: #A393C7; /* Color aproximado del navbar en tus imágenes */
+}
+
+/*
+ * Reglas para el Footer Temático (Lila)
+ * Estas reglas sobrescriben el bg-light y text-dark de Bootstrap
+ */
+
+footer {
+    /* Fondo del footer: Usa el color lila/lavanda de tu navbar */
+    background-color: #A393C7 !important; 
+    
+    /* Color del texto del footer: Blanco para contrastar con el fondo oscuro */
+    color: white !important; 
+    
+    /* Eliminar el borde superior, ya que el cambio de color ya separa las secciones */
+    border-top: none !important; 
+}
+
+/* Reglas específicas para los enlaces y texto que podría ser afectado por text-dark */
+footer a, 
+footer p,
+footer .text-secondary {
+    color: white !important; /* Asegura que todos los textos sean blancos */
+}
+
+/* Reglas para los iconos sociales (si deseas que brillen con el azul) */
+footer a:hover i {
+    color: #0d6efd !important; /* El color azul de tus botones "Agregar al Carro" */
+}
