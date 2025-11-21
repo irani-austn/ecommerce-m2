@@ -21,6 +21,8 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+    <script defer src="./assets/js/logica_alert.js"></script>
 </head>
 
 <body>
@@ -41,7 +43,7 @@
             <a class="nav-link " href="index.html">Decoración</a>
           </li>
           <li class="nav-item flex-fill">
-            <a class="nav-link active" aria-current="page" href="#seccion-productos">Productos</a>
+            <a class="nav-link active" aria-current="page" href="detalle-producto.html">Productos</a>
           </li>
           <li class="nav-item flex-fill">
             <a class="nav-link" href="index.html">Regalos</a>
@@ -61,10 +63,62 @@
     </div>
   </nav>
 
-  <header class="py-3">
-    <h1 class="text-center">Silla Escritorio Textil Negro</h1>
+  <header class="py-3 text">
+    <h1 class="text-center">Detalle producto</h1>
   </header>
 
+<main class="container">
+    <section class="cuadro-detalle">
+        <div class="row row-cols-1 row-cols-md-2">
+            
+            <!-- COLUMNA IZQUIERDA (IMAGEN) -->
+            <div class="col cuadro-imagen mt-5 text-center">
+                <img src="./assets/img/Silla.webp" class="img-fluid w-75" alt="Silla escritorio">
+            </div>
+
+            <!-- COLUMNA DERECHA (TEXTO ORGANIZADO) -->
+            <div class="col cuadro-despliegue">
+                <div class="row">
+
+                    <!-- TEXTO IZQUIERDA -->
+                    <div class="col-md-6">
+                        <br><br><br>
+                        <p>Silla Escritorio Textil Negro</p>
+
+                        <h3>Características principales</h3>
+
+                        <ul>
+                            <li class="pt-3">Tipo de silla de escritorio: Ejecutiva</li>
+                            <li>Cuenta con apoyabrazos: Sí</li>
+                            <li>Cuenta con respaldo reclinable: No</li>
+                        </ul>
+
+                        <p class="mt-4">Entrega en Santiago</p>
+                    </div>
+
+                    <!-- LADO DERECHO -->
+                    <div class="col-md-6 mt-5">
+                        <br>
+                        <p class="fs-4 ms-5"><strong>$49.990</strong></p>
+
+                        <button id="liveAlertBtn" class="btn btn-primary mt-3">
+                            Agregar al carro
+                        </button>
+
+                        <!-- Aquí va el alert -->
+                        <div id="liveAlertPlaceholder" class="mt-3"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+
 </body>
+
 
 </html>
