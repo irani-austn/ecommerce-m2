@@ -1,10 +1,9 @@
 Pagina web e-commerce
 ___
-Descripción
-
-Se crea pagina web de productos de venta de productos de hogar, utilizando HTML, CSS, Y algunas funcionalidades basicas en JavaScript. 
+Descripción:
+Se crea pagina web de productos de venta de productos de hogar, utilizando HTML, CSS, y algunas funcionalidades basicas en JavaScript. 
 ___
-Estructura de archivos
+Capturas de pantalla. 
 ___
 
 
